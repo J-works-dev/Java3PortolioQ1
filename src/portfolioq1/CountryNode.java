@@ -10,18 +10,13 @@ public class CountryNode {
     public CountryNode() {
         count++;
     }
+    
     public CountryNode(String name, String city) {
         count++;
-//        this.next = next;
-//        this.prev = prev;
         this.name = name;
         this.city = new City(city);
     }
-//    public void add(String name, String city) {
-//        CountryNode temp = new CountryNode(name, city, null, tail);
-//        if (tail != null)
-//        
-//    }
+    
     public void display() {
         System.out.println("There is(are) " + count + " country(ies) in the list ");
         System.out.println(name + "'s capital city is " + city.getName());
