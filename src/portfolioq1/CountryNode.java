@@ -1,8 +1,8 @@
 package portfolioq1;
 
 public class CountryNode {
-    private CountryNode left;
-    private CountryNode right;
+    private CountryNode prev;
+    private CountryNode next;
     private String name;
     private City city;
     static int count;
@@ -24,6 +24,7 @@ public class CountryNode {
 //    }
     public void display() {
         System.out.println("There is(are) " + count + " country(ies) in the list ");
+        System.out.println(name + "'s capital city is " + city.getName());
     }
     
     private class City {
@@ -42,19 +43,19 @@ public class CountryNode {
         }
     }
 
-    public CountryNode getLeft() {
-        return left;
+    public CountryNode getPrev() {
+        return prev;
     }
 
-    public void setLeft(CountryNode left) {
-        this.left = left;
+    public void setPrev(CountryNode prev) {
+        this.prev = prev;
     }
 
-    public CountryNode getRight() {
-        return right;
+    public CountryNode getNext() {
+        return next;
     }
 
-    public void setRight(CountryNode right) {
-        this.right = right;
+    public void setNext(CountryNode next) {
+        this.next = next;
     }
 }
